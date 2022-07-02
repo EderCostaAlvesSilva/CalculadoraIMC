@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <script src="calculoIMC.js"></script>
+    <style>
+        .container{
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            width: 400px;
+            height: auto;
+            background: gold;
+            box-shadow: 0px 0px 3px 3px rgb(0, 0, 0, 0.7); 
+        }
+        header{
+            text-align: center;
+            padding: 3px;
+            box-sizing: border-box;
+            border-bottom: 5px solid black;
+        }
+        table{
+            width: 330px;
+            margin: auto;
+            margin-top: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        td{
+            padding: 5px;
+        }
+        input{
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .cx{
+            width: 330px;
+            margin: auto;
+            padding-bottom: 30px;
+        }
+        button{
+            border:3px outset gold;
+            background: black;
+            width: 100%;
+            color: gold;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            font-size: 1.4em;
+        }
+        .saida{
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px 3px rgb(0, 0, 0, 0.3);
+            height: 150px;
+            background: black;
+            color: gold;
+            font-weight: bold;
+            font-size: 1.6em;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><strong>Calculadora - IMC</strong></h1>
+        </header>
+        <table>
+            <tr>
+                <td>Nome: </td> 
+                <td><input id="nome" type="text"></td>
+            </tr>
+            <tr>
+                <td>Altura: </td> 
+                <td><input id="altura" type="number"></td>
+            </tr>
+            <tr>
+                <td>Peso: </td> 
+                <td><input id="peso" type="number"></td>
+            </tr>
+        </table>
+        <div class="cx">
+            <button onclick="calculo()" type="button">Calcular</button>
+            <div class="saida">
+                <p id="saida"></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
